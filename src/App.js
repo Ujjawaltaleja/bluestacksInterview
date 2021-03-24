@@ -1,25 +1,46 @@
-import logo from './logo.svg';
 import './App.css';
+import Future from './header';
+import GameList from './GameList';
+import React  from 'react';
+import {serviceParser} from './utility';
 
-function App() {
+export default class App extends React.Component{
+  constructor(props){
+    super(props);
+    this.state={
+      activeCampaign:'upComing',
+      upComingCampaign:[],
+      liveCampaign:[],
+      pastCampaign:[],
+      err:'',
+    }
+  }
+  componentWillMount(){
+    fetch("https://reqres.in/api/users?page=2")
+    .then(res => {
+      // let parsedRes=serviceParser(res);
+      // this.setState({parsedRes});
+      
+    console.log(JSON.parse(res));
+
+  },err=>{
+    this.setState({err:'no data found'});
+  }
+    );
+  }
+  render(){
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Future/>
+      <div className="Parentcontainer">
+        <div className='containerHeading'>
+        Manage Campaigns
+        </div>
+        <GameList/>
+        </div>
     </div>
   );
+  }
 }
 
-export default App;
+
