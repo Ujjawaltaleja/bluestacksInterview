@@ -2,7 +2,6 @@ import * as images from "./images";
 import Popup from "./popUpCard";
 import React, { useState } from "react";
 import { getDiffDates, formatDate } from "./utility";
-const imagess = require.context("./gameimages", true);
 function GameRow(props) {
   let data = props.GameInfo;
   const [date, setDate] = useState({
