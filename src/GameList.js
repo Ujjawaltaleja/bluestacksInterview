@@ -2,7 +2,7 @@ import GameRow from "./GameRow";
 import { useState } from "react";
 import Campaigns from "./Campaigns";
 import { serviceParser } from "./utility";
-export default function ListItem() {
+export default function GamesList() {
   const [state, setState] = useState({
     activeCampaign: "upComingCampaign",
     upComingCampaign: [],
