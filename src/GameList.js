@@ -20,7 +20,7 @@ export default function GamesList() {
     });
   };
   const url =
-    "https://script.googleusercontent.com/macros/echo?user_content_key=XAip3LKZq73qJGAkVVRYJ8Vvcw2APFLMieIzvi8GSmkfbLb43Ym4TdZEAz9Pp0Hn10gtdraF9lJ7B74IbGTbGSPgDq_394bom5_BxDlH2jW0nuo2oDemN9CCS2h10ox_1xSncGQajx_ryfhECjZEnCxAjIlWvUX45KzzEjeoEeVvgOAIhf_2Shpo5V6zLrS-VD1QuIGmDaEsEhA72Mog3eWP9Ku45xX9Yd6_6_6YKa-BYbJcDcf1Btz9Jw9Md8uu&lib=MInZPmniO9MZxPS0OzA_R5fZRxDZl70MQ";
+    "https://script.googleusercontent.com/macros/echo?user_content_key=LCIptD5PpcY-ldGGEl0DRxvgo0xjiwnL-gIJwFN4BP7v7OdzpDA3YT3d6fqRrwXH-ud5Oomu39hctv1SGMWG6seMgfa4-qiLm5_BxDlH2jW0nuo2oDemN9CCS2h10ox_1xSncGQajx_ryfhECjZEnHJv0pRCklc5LfAib0B4bnUjCea79s1O-UzmzwVx-DtMB2uyyy3f9T3cGSXu4XyMv4IIom_hnAs29bYccof9S1szIFKfnN7va9z9Jw9Md8uu&lib=MInZPmniO9MZxPS0OzA_R5fZRxDZl70MQ";
   if (
     state.upComingCampaign.length == 0 &&
     state.liveCampaign.length == 0 &&

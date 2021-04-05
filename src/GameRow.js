@@ -8,6 +8,10 @@ function GameRow(props) {
     eventDate: formatDate(data.BS_createon),
     dateDiff: data.BS_datediff,
   });
+  React.useEffect(() => {
+    setDate({ eventDate: formatDate(data.BS_createon),
+      dateDiff: data.BS_datediff,});
+}, [props.GameInfo])
   const [showPopUp, togglePopUp] = useState(false);
   const hidePopUp = () => {
     togglePopUp(false);
